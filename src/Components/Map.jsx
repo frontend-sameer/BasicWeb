@@ -20,7 +20,7 @@ const Map = () => {
           loading="lazy"
         ></iframe>
       </div>
-      <div className="w-full flex items-center px-8 gap-6 justify-center h-72 z-10 absolute bottom-14.5">
+      <div className="w-full flex items-center px-8 gap-6 justify-center h-72 z-10 absolute top-100">
         <div
           onMouseEnter={() =>
             setonHover((prev) => ({ ...onHover, box1: !onHover.box1 }))
