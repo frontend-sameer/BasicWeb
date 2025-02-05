@@ -110,3 +110,14 @@
 .badge {
   box-shadow: 0px 5px 0px #ffaa1763;
 }
+.arrow {
+  transition: all 0.1s linear;
+}
+.hover-read:hover .arrow {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.hover-read:hover .read {
+  color: #ffaa17;
+  transition: all 0.1s linear;
+}

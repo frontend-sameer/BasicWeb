@@ -7,10 +7,12 @@ import Card from "./Components/Card";
 const App = () => {
   return (
     <>
-      <Card />
-      <Service />
-      <Map />
-      <Footer />
+      <div className="w-full h-screen bg-[#FEFEFE]">
+        <Card />
+        <Service />
+        <Map />
+        <Footer />
+      </div>
     </>
   );
 };
