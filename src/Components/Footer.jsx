@@ -223,7 +223,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full h-24 flex bg-[#222429] relative items-center justify-center">
-          <div className="w-[90%] h-24 bg-[#2C2E33] flex items-center justify-center rounded-lg">
+          <div className="w-[90%] h-16 bg-[#2C2E33] flex items-center justify-center rounded-lg">
             <p className="text-[#8C8F94]">
               © Copyright reserved by{" "}
               <span className="hover:text-white transition-colors duration-[0.2s] cursor-pointer">
