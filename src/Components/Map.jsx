@@ -19,183 +19,187 @@ const Map = () => {
           height="100%"
           loading="lazy"
         ></iframe>
-      </div>
-      <div className="w-full flex items-center px-8 gap-6 justify-center h-72 z-10 absolute top-270">
-        <div
-          onMouseEnter={() =>
-            setonHover((prev) => ({ ...onHover, box1: !onHover.box1 }))
-          }
-          onMouseLeave={() => setonHover((prev) => ({ ...prev, box1: false }))}
-          className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
-        >
-          {" "}
-          <h1 className="text-xl font-bold">New York</h1>
-          <div className="w-full h-full  flex flex-col justify-center gap-1">
-            <div className="w-56 h-10 flex items-center gap-5">
-              <IoCallSharp
-                size={"1.7vw"}
-                className={`rotate-260 transition-colors duration-[0.3s] ${
-                  onHover.box1 ? "text-white" : "text-red-400"
-                }`}
-              />
-              <h4
-                className={`${
-                  onHover.box1 ? "text-white" : "text-gray-500"
-                } transition-colors duration-[0.3s] cursor-pointer`}
-              >
-                666 888 000
-              </h4>
-            </div>
-            <div className="w-56 h-10 flex items-center gap-5">
-              <MdEmail
-                size={"1.7vw"}
-                className={`transition-colors duration-[0.3s] ${
-                  onHover.box1 ? "text-white" : "text-red-400"
-                }`}
-              />
-              <h4
-                className={`${
-                  onHover.box1 ? "text-white" : "text-gray-500"
-                } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
-              >
-                needhelp@company.com
-              </h4>
-            </div>{" "}
-            <div className="w-60  h-10 flex items-center gap-5">
-              <FaLocationDot
-                size={"1.7vw"}
-                className={`transition-colors ml-1 duration-[0.3s] ${
-                  onHover.box1 ? "text-white" : "text-red-400"
-                }`}
-              />
-              <h4
-                className={`${
-                  onHover.box1 ? "text-white" : "text-gray-500"
-                } transition-colors duration-[0.3s] cursor-pointer mt-6`}
-              >
-                35 Deerfield Valdosta Road, United Kingdom
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div className="w-90 h-full bg-blue-300">
-          <div
-            onMouseEnter={() =>
-              setonHover((prev) => ({ ...prev, box2: !onHover.box2 }))
-            }
-            onMouseLeave={() =>
-              setonHover((prev) => ({ ...prev, box2: false }))
-            }
-            className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
-          >
-            {" "}
-            <h1 className="text-xl font-bold">Washington DC</h1>
-            <div className="w-full h-full  flex flex-col justify-center gap-1">
-              <div className="w-56 h-10 flex items-center gap-5">
-                <IoCallSharp
-                  size={"1.7vw"}
-                  className={`rotate-260 transition-colors duration-[0.3s] ${
-                    onHover.box2 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover.box2 ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer`}
-                >
-                  666 888 000
-                </h4>
-              </div>
-              <div className="w-56 h-10 flex items-center gap-5">
-                <MdEmail
-                  size={"1.7vw"}
-                  className={`transition-colors duration-[0.3s] ${
-                    onHover.box2 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover.box2 ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
-                >
-                  needhelp@company.com
-                </h4>
-              </div>{" "}
-              <div className="w-60  h-10 flex items-center gap-5">
-                <FaLocationDot
-                  size={"1.7vw"}
-                  className={`transition-colors ml-1 duration-[0.3s] ${
-                    onHover.box2 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover.box2 ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer mt-6`}
-                >
-                  35 Deerfield Valdosta Road, United Kingdom
-                </h4>
+        <div className="w-[100% h-fit absolute bottom-0">
+          <div className="w-full flex items-center px-8 gap-6 justify-center h-72">
+            <div
+              onMouseEnter={() =>
+                setonHover((prev) => ({ ...onHover, box1: !onHover.box1 }))
+              }
+              onMouseLeave={() =>
+                setonHover((prev) => ({ ...prev, box1: false }))
+              }
+              className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
+            >
+              {" "}
+              <h1 className="text-xl font-bold">New York</h1>
+              <div className="w-full h-full  flex flex-col justify-center gap-1">
+                <div className="w-56 h-10 flex items-center gap-5">
+                  <IoCallSharp
+                    size={"1.7vw"}
+                    className={`rotate-260 transition-colors duration-[0.3s] ${
+                      onHover.box1 ? "text-white" : "text-red-400"
+                    }`}
+                  />
+                  <h4
+                    className={`${
+                      onHover.box1 ? "text-white" : "text-gray-500"
+                    } transition-colors duration-[0.3s] cursor-pointer`}
+                  >
+                    666 888 000
+                  </h4>
+                </div>
+                <div className="w-56 h-10 flex items-center gap-5">
+                  <MdEmail
+                    size={"1.7vw"}
+                    className={`transition-colors duration-[0.3s] ${
+                      onHover.box1 ? "text-white" : "text-red-400"
+                    }`}
+                  />
+                  <h4
+                    className={`${
+                      onHover.box1 ? "text-white" : "text-gray-500"
+                    } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
+                  >
+                    needhelp@company.com
+                  </h4>
+                </div>{" "}
+                <div className="w-60  h-10 flex items-center gap-5">
+                  <FaLocationDot
+                    size={"1.7vw"}
+                    className={`transition-colors ml-1 duration-[0.3s] ${
+                      onHover.box1 ? "text-white" : "text-red-400"
+                    }`}
+                  />
+                  <h4
+                    className={`${
+                      onHover.box1 ? "text-white" : "text-gray-500"
+                    } transition-colors duration-[0.3s] cursor-pointer mt-6`}
+                  >
+                    35 Deerfield Valdosta Road, United Kingdom
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="w-90 h-full bg-blue-300">
-          <div
-            onMouseEnter={() =>
-              setonHover((prev) => ({ ...prev, box3: !onHover.box3 }))
-            }
-            onMouseLeave={() =>
-              setonHover((prev) => ({ ...prev, box3: false }))
-            }
-            className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
-          >
-            {" "}
-            <h1 className="text-xl font-bold">Las Vegas</h1>
-            <div className="w-full h-full  flex flex-col justify-center gap-1">
-              <div className="w-56 h-10 flex items-center gap-5">
-                <IoCallSharp
-                  size={"1.7vw"}
-                  className={`rotate-260 transition-colors duration-[0.3s] ${
-                    onHover.box3 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover.box3 ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer`}
-                >
-                  666 888 000
-                </h4>
+            <div className="w-90 h-full bg-blue-300">
+              <div
+                onMouseEnter={() =>
+                  setonHover((prev) => ({ ...prev, box2: !onHover.box2 }))
+                }
+                onMouseLeave={() =>
+                  setonHover((prev) => ({ ...prev, box2: false }))
+                }
+                className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
+              >
+                {" "}
+                <h1 className="text-xl font-bold">Washington DC</h1>
+                <div className="w-full h-full  flex flex-col justify-center gap-1">
+                  <div className="w-56 h-10 flex items-center gap-5">
+                    <IoCallSharp
+                      size={"1.7vw"}
+                      className={`rotate-260 transition-colors duration-[0.3s] ${
+                        onHover.box2 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover.box2 ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer`}
+                    >
+                      666 888 000
+                    </h4>
+                  </div>
+                  <div className="w-56 h-10 flex items-center gap-5">
+                    <MdEmail
+                      size={"1.7vw"}
+                      className={`transition-colors duration-[0.3s] ${
+                        onHover.box2 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover.box2 ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
+                    >
+                      needhelp@company.com
+                    </h4>
+                  </div>{" "}
+                  <div className="w-60  h-10 flex items-center gap-5">
+                    <FaLocationDot
+                      size={"1.7vw"}
+                      className={`transition-colors ml-1 duration-[0.3s] ${
+                        onHover.box2 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover.box2 ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer mt-6`}
+                    >
+                      35 Deerfield Valdosta Road, United Kingdom
+                    </h4>
+                  </div>
+                </div>
               </div>
-              <div className="w-56 h-10 flex items-center gap-5">
-                <MdEmail
-                  size={"1.7vw"}
-                  className={`transition-colors duration-[0.3s] ${
-                    onHover.box3 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
-                >
-                  needhelp@company.com
-                </h4>
-              </div>{" "}
-              <div className="w-60  h-10 flex items-center gap-5">
-                <FaLocationDot
-                  size={"1.7vw"}
-                  className={`transition-colors ml-1 duration-[0.3s] ${
-                    onHover.box3 ? "text-white" : "text-red-400"
-                  }`}
-                />
-                <h4
-                  className={`${
-                    onHover.box3 ? "text-white" : "text-gray-500"
-                  } transition-colors duration-[0.3s] cursor-pointer mt-6`}
-                >
-                  35 Deerfield Valdosta Road, United Kingdom
-                </h4>
+            </div>
+            <div className="w-90 h-full bg-blue-300">
+              <div
+                onMouseEnter={() =>
+                  setonHover((prev) => ({ ...prev, box3: !onHover.box3 }))
+                }
+                onMouseLeave={() =>
+                  setonHover((prev) => ({ ...prev, box3: false }))
+                }
+                className="w-90 h-full transition-colors duration-[0.3s] text-black bg-white hover:bg-[#FFAA17] hover:text-white p-10"
+              >
+                {" "}
+                <h1 className="text-xl font-bold">Las Vegas</h1>
+                <div className="w-full h-full  flex flex-col justify-center gap-1">
+                  <div className="w-56 h-10 flex items-center gap-5">
+                    <IoCallSharp
+                      size={"1.7vw"}
+                      className={`rotate-260 transition-colors duration-[0.3s] ${
+                        onHover.box3 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover.box3 ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer`}
+                    >
+                      666 888 000
+                    </h4>
+                  </div>
+                  <div className="w-56 h-10 flex items-center gap-5">
+                    <MdEmail
+                      size={"1.7vw"}
+                      className={`transition-colors duration-[0.3s] ${
+                        onHover.box3 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer text-[1.5w]`}
+                    >
+                      needhelp@company.com
+                    </h4>
+                  </div>{" "}
+                  <div className="w-60  h-10 flex items-center gap-5">
+                    <FaLocationDot
+                      size={"1.7vw"}
+                      className={`transition-colors ml-1 duration-[0.3s] ${
+                        onHover.box3 ? "text-white" : "text-red-400"
+                      }`}
+                    />
+                    <h4
+                      className={`${
+                        onHover.box3 ? "text-white" : "text-gray-500"
+                      } transition-colors duration-[0.3s] cursor-pointer mt-6`}
+                    >
+                      35 Deerfield Valdosta Road, United Kingdom
+                    </h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

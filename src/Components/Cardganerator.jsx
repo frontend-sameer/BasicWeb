@@ -6,7 +6,7 @@ import { FaComments } from "react-icons/fa";
 const Cardganerator = ({ details }) => {
   return (
     <>
-      <div className="w-80 h-[100%]  flex flex-col relative z-0">
+      <div className="w-80 h-[85%] overflow-hidden  flex flex-col relative z-0">
         <div className="w-80 h-[100%] relative main-card overflow-hidden flex z-10">
           <img
             className="w-full relative h-[100%] object-center object-cover img cursor-pointer"
@@ -23,7 +23,7 @@ const Cardganerator = ({ details }) => {
           </div>
         </div>
         <div className="w-full h-[50%] py-6 bg-white border-[0.5px]  border-gray-200">
-          <div className="w-full h-[15%]  flex items-center gap-4 px-5">
+          <div className="w-full h-[15%]  flex items-center gap-4 px-6">
             <div className="w-fit h-full flex items-center">
               <IoMdPerson size={"1.5vw"} className="text-[#FFAA17]" />
               <span className="text-xs text-gray-500 ml-1">
@@ -37,11 +37,11 @@ const Cardganerator = ({ details }) => {
               </span>
             </div>
           </div>
-          <div className="w-full h-[100%]">
+          <div className="w-full h-[100%] flex flex-col items-center justify-between">
             <p className="text-[2vw] font-semibold ml-5 transition-colors duration-[0.3s] cursor-pointer leading-6 mt-4 w-72 hover:text-[#FFAA17]">
               Professional technology information & Solutions are just like...
             </p>
-            <div className="w-full h-12 bg-[#F4F5F8] flex items-center justify-between mt-15">
+            <div className="w-full h-12 bg-[#F4F5F8] flex items-center justify-between">
               <div className="w-36 h-full flex items-center gap-0.5 px-5">
                 <div className="h-fit  w-[100%] flex items-center hover-read justify-center cursor-pointer">
                   <h4 className="font-semibold text-sm text-gray-400 cursor-pointer read">
